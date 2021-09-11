@@ -1,5 +1,5 @@
 # Numbers to Words Converter - Vietnamese
 
 ```
-import { spell } from 'spell.js'
+import { spell } from 'src/spell_vn.min.js'
 ```
