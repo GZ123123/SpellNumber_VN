@@ -25,12 +25,12 @@
             case '1':
                 return `${spell} ${(_2 === '1' || _2 === '0') ? 'một' : 'mốt'}`;
             case '5':
-                return `${spell} lăm`;
+                return `${spell} ${(_2 === '0') ? 'năm' : 'lăm'}`;
             default:
                 return `${spell} ${word[_3]}`;
         }
     }
-    const spell_group_of_3 = (num) => {
+    const spell_group_of_3 = (num, next) => {
             let [_3, _2, _1] = num.split(''); // 432
             if (_2 === undefined) return word[_3]; // 1 2 3 4 5 6 7 8 9 0
             else if (_1 === undefined) return spell_group_of_2(_2, _3) // 10 11 12 21 23 25 53 55 99
